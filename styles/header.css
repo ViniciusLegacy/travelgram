@@ -1,5 +1,5 @@
 header {
-    padding-block: 32px;
+    padding-block: 1rem;
     font: var(--text-md);
 }
 
@@ -44,4 +44,10 @@ header .container {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+@media (width >= 80em) {
+    header {
+        padding-block: 1.25rem;
+    }
 }
