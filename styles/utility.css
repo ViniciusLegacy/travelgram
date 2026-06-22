@@ -2,6 +2,10 @@
     display: none;
 }
 
+.flex {
+    display: flex;
+}
+
 @media (width >= 80em) {
     .desktop-only {
         display: initial;

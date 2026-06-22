@@ -1,5 +1,4 @@
 footer {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -8,7 +7,6 @@ footer {
     font: var(--text-md);
 
     .policy {
-        display: flex;
         gap: 1rem;
     }
 }

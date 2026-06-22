@@ -4,14 +4,12 @@ header {
 }
 
 header .container {
-    display: flex;
     flex-direction: column;
 
     padding-inline: 2rem;
 }
 
 #profile {
-    display: flex;
     flex-direction: column;
     gap: 1rem;
 
@@ -32,21 +30,20 @@ header .container {
 #profile h1 {
     font: var(--text-lg);
     color: var(--text-color-primary);
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
 }
 
 #info {
     list-style: none;
-    display: flex;
+
     flex-direction: column;
-    gap: 16px;
-    width: 280px;
+    gap: 1rem;
+    width: 17.5rem;
 }
 
 #info li {
-    display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 1rem;
 }
 
 @media (width >= 80em) {
