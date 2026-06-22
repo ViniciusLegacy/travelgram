@@ -1,11 +1,23 @@
 footer {
     display: flex;
-    gap: 24px;
-    padding-block: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
 
     font: var(--text-md);
+
+    .policy {
+        display: flex;
+        gap: 1rem;
+    }
 }
 
-footer span:nth-child(1) {
-    margin-right: auto;
+@media (width >= 80em) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-block: 1.5rem;
+    }
 }
