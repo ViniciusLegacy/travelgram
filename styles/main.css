@@ -1,12 +1,27 @@
-main {
+main.container {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    padding-block: 24px;
+    gap: 1rem;
+    justify-content: center;
+
+    padding-block: 1rem;
+    padding-inline: 0;
 }
 
 main img {
-    width: 286px;
-    height: 286px;
+    width: 20.5rem;
+    height: 20.5rem;
     object-fit: cover;
+}
+
+@media (width >= 80em) {
+    main.container {
+        gap: 1.5rem;
+        padding-block: 1.5rem;
+
+        & img {
+            width: 17.875rem;
+            height: 17.875rem;
+        }
+    }
 }
