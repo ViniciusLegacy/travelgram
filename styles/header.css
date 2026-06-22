@@ -5,23 +5,26 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+
+    padding-inline: 2rem;
 }
 
 #profile {
     display: flex;
-    align-items: center;
-    gap: 32px;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
 }
 
 #profile > div {
-    max-width: 384px;
+    max-width: 24rem;
 }
 
 #profile img {
-    width: 176px;
-    height: 176px;
+    width: 7.5rem;
+    height: 7.5rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -49,5 +52,22 @@ header .container {
 @media (width >= 80em) {
     header {
         padding-block: 1.25rem;
+
+        & .container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    #profile {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
+        & img {
+            width: 11rem;
+            height: 11rem;
+        }
     }
 }
